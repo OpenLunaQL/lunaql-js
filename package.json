@@ -1,0 +1,16 @@
+{
+    "name": "@lunaql/client",
+    "version": "0.0.1",
+    "description": "A Multi-Region NoSQL Database",
+    "license": "MIT",
+    "author": "Donald Pakkies <donaldpakkies@gmail.com>",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "bugs": "https://github.com/OpenLunaQL/lunaql-js/issues",
+    "homepage": "https://lunaql.com",
+    "repository": "https://github.com/OpenLunaQL/lunaql-js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {}
+}
