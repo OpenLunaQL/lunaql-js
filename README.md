@@ -51,6 +51,7 @@ const main = async () => {
 }
 
 main();
+```
 
 ## Todo
 - [ ] Add tests
