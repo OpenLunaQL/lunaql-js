@@ -7,10 +7,10 @@ This is a JS client for the [LunaQL](https://lunaql.com) NoSQL database.
 ```ts
 import { Database } from './src'
 
-const db = new Database(
-    '<endpoint>',
-    '<token>'
-);
+const db = new Database({
+    endpoint: '<endpoint>',
+    token: '<token>'
+});
 
 type User = {
     _id: number;
