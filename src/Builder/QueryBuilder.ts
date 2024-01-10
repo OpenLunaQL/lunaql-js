@@ -98,7 +98,7 @@ export class QueryBuilder {
     }
 
     /**
-     * Limit the collection.
+     * Skip documents in the collection.
      */
     skip(skip: number): QueryBuilder {
         return this.updateQuery("skip", skip);
@@ -197,7 +197,7 @@ export class QueryBuilder {
      * Fetch the first document from the collection.
      */
     async fetchFirst<T = unknown>(): Promise<T> {
-        this.updateQuery("do", "fetch");
+        this.updateQuery("do", "fetchFirst");
 
         return this.persist();
     }
@@ -206,7 +206,7 @@ export class QueryBuilder {
      * Update documents in the collection.
      */
     async update(data: any) {
-        this.updateQuery("data", data);
+        this.updateQuery("set", data);
         this.updateQuery("do", "update");
 
         return this.persist();
